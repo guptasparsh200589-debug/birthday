@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sonali 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FLOATING BACKGROUND EMOJIS -->
+    <div class="background" aria-hidden="true">
+        <span class="bg-item item1">✨</span>
+        <span class="bg-item item2">🦋</span>
+        <span class="bg-item item3">🌸</span>
+        <span class="bg-item item4">⭐</span>
+        <span class="bg-item item5">🎀</span>
+        <span class="bg-item item6">✿</span>
+        <span class="bg-item item7">💗</span>
+        <span class="bg-item item8">✨</span>
+        <span class="bg-item item9">🌷</span>
+    </div>
+
+    <!-- PAGE 1: WELCOME / HOME -->
+    <section id="homePage" class="page home">
+        <p class="top-text">A LITTLE SURPRISE FOR MY BEST FRIEND… ✦</p>
+        <h1>Happy Birthday<br><em>Sonali!</em> 🎀</h1>
+        <p class="subtitle">To my favourite human, my partner in silly moments<br>and my forever best friend 💕</p>
+
+        <button class="main-btn" id="forYouButton">
+            OPEN YOUR SURPRISE 💗
+        </button>
+
+        <div class="arrow">↓</div>
+
+        <!-- CAT STICKERS -->
+        <div class="home-stickers" aria-label="Friendship cat stickers">
+            <img src="assets/new-cat-smile.png" alt="Smiling cat sticker" class="sticker home-cat-one">
+            <img src="assets/new-cat-cool.png" alt="Cool cat sticker" class="sticker home-cat-two">
+            <img src="assets/new-cat-curious.png" alt="Curious cat sticker" class="sticker home-cat-three">
+        </div>
+
+        <div class="scroll-tease">
+            <p class="funny-text"><i>Neeche scroll mat karo, yahan kuch nahi hai… upar pink button dabao 😂👆</i></p>
+        </div>
+    </section>
+
+    <!-- PAGE 2: LETTER & CAKE CUTTING -->
+    <section id="birthdayPage" class="page birthday hidden">
+
+        <!-- CAT STICKERS AROUND CARDS -->
+        <div class="birthday-stickers" aria-label="Friendship cat stickers">
+            <img src="assets/new-cat-pixel.png" alt="Pixel sunglasses cat" class="sticker birthday-cat-one">
+            <img src="assets/new-cat-smile.png" alt="Smiling cat" class="sticker birthday-cat-two">
+            <img src="assets/new-cat-cool.png" alt="Cool cat" class="sticker birthday-cat-three">
+            <img src="assets/new-cat-curious.png" alt="Curious cat" class="sticker birthday-cat-four">
+        </div>
+
+        <!-- 1. FRIENDSHIP LETTER & SECRET CONFESSION -->
+        <div class="card note-box">
+            <span class="kicker">A LITTLE NOTE FOR YOU</span>
+            <h2>Dear Sonali 💌</h2>
+            <p>
+                Happy Birthday to the person who makes even the most ordinary days feel special! 
+                Sach kahu toh tumhare bina life thodi boring si lagti hai. I hope this new year brings you 
+                endless happiness, crazy adventures, aur har woh khushi jo tum deserve karti ho.
+            </p>
+            <p>
+                Thank you for being my constant—for the non-stop bak-bak, bina baat ke hasna, 
+                and understanding me without even saying a word. Chahe jitna bhi chidha lu, 
+                you will always be my favourite person! 💗
+            </p>
+
+            <button class="small-btn" id="complimentButton">
+                Tap for a Secret Confession ✨👀
+            </button>
+
+            <div id="compliment" class="compliment hidden">
+                <p>
+                    <strong>🤫 Just between us:</strong> Tum sirf meri best friend nahi ho, tum meri <em>comfort zone</em> ho. 
+                    Jab bhi mood off hota hai, bas tumse baat karke sab thik lagne lagta hai. I’m really lucky to have you, Sonali! 🫂💞
+                </p>
+                <span class="tease-tag">(Par zyada bhaav mat khana ab, warna aur chidhaunga! 😜✨)</span>
+            </div>
+        </div>
+
+        <!-- 2. INTERACTIVE CAKE BLOWING + CAKE CUTTING -->
+        <div class="card cake-box" id="cakeBox">
+            <span class="kicker">MAKE A WISH, SONALI!</span>
+            <h2>A Cake Just For You 🎂</h2>
+
+            <!-- CANDLES -->
+            <div id="candles" class="candles">
+                <div class="candle"><span class="flame"></span><span class="smoke">〰</span><span class="stick"></span></div>
+                <div class="candle"><span class="flame"></span><span class="smoke">〰</span><span class="stick"></span></div>
+                <div class="candle"><span class="flame"></span><span class="smoke">〰</span><span class="stick"></span></div>
+            </div>
+
+            <!-- CAKE STAGE -->
+            <div class="cake-stage" id="cakeStage">
+                <div class="knife" id="knife">🔪</div>
+                <div class="cake" id="cakeEmoji">🎂</div>
+                <div class="cake-slice hidden" id="cakeSlice">🍰 ✨ 🍰</div>
+            </div>
+
+            <p class="instruction" id="cakeInstruction">
+                Close your eyes, make a wish and blow out your candles! 💗
+            </p>
+
+            <!-- STEP 1 BUTTON: BLOW CANDLES -->
+            <button class="main-btn" id="blowButton">
+                Blow The Candles 🌬️🕯️
+            </button>
+
+            <!-- STEP 2 BUTTON: CUT CAKE -->
+            <button class="main-btn cut-btn hidden" id="cutButton">
+                Now Cut The Cake 🔪🍰
+            </button>
+
+            <p id="micStatus" class="status">Waiting for your birthday wish...</p>
+
+            <!-- CELEBRATION & GIFT UNLOCK -->
+            <div id="celebration" class="hidden">
+                <h1 class="birthday-title">HAPPY BIRTHDAY SONALI! 🎉</h1>
+                <p>May all your beautiful wishes come true! 💗</p>
+                <div class="party-emoji">🥳 🎊 🎀 🧁 💃</div>
+
+                <button class="main-btn gift-button" id="giftButton">
+                    CLAIM YOUR GIFT 🎁
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PAGE 3: PARTY FIRST, GIFT LATER + SPECIAL SURPRISE -->
+    <section id="giftPage" class="page gift-page hidden">
+        <div class="card gift-box">
+            <div class="gift-emoji">🎁😂</div>
+            <img src="assets/party-cat-final.png" alt="Party cat sticker" class="sticker final-party-cat">
+
+            <h1>
+                Pehle shandaar PARTY do,<br>
+                itni bhi jaldi kya hai gift ki! 😁😂
+            </h1>
+
+            <p class="party-rule">
+                <strong>Rule #1:</strong> No Party = No Gift! 🍕🍔🍦<br>
+                Jaldi batao treat kab aur kahan mil rahi hai? ✨
+            </p>
+
+            <!-- BUTTON GROUP -->
+            <div class="gift-btn-group">
+                <button class="main-btn" id="backButton">
+                    Back to Celebration 🎂
+                </button>
+
+                <button class="main-btn surprise-btn" id="specialSurpriseBtn">
+                    Special Surprise ✨
+                </button>
+
+                <!-- 30 SEC BAAD APPEAR HONE WALA BUTTON -->
+                <button class="main-btn cake-redirect-btn hidden" id="cakeCuttingPageBtn">
+                    Cake Cutting Page 🍰
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL SURPRISE CUSTOM ALERT MODAL -->
+    <div id="surpriseModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <!-- STEP 1: YES / NO QUESTION -->
+            <div id="modalAsk">
+                <div class="modal-icon">💌👀</div>
+                <h3>Special Surprise kholna hai ki nahi?</h3>
+                <p class="modal-sub" id="noTeaseMsg">Soch samajh kar click karna… 😜</p>
+
+                <div class="modal-actions">
+                    <button class="main-btn yes-btn" id="yesSurpriseBtn">Yes 💖</button>
+                    <button class="main-btn no-btn" id="noSurpriseBtn">No 🙈</button>
+                </div>
+            </div>
+
+            <!-- STEP 2: LOVE UUUU BITTI MESSAGE -->
+            <div id="modalReveal" class="hidden">
+                <div class="modal-icon">🫂💖✨</div>
+                <h2 class="bitti-title">Love uuuu bitti! 💕</h2>
+                <p class="bitti-msg">
+                    Tum duniya ki sabse pyari, sabse crazy aur thodi si nautanki bestie ho! 😜<br><br>
+                    Chahe kitna bhi tang karu, kitna bhi chidhau, tumhare bina bilkul adhoora sa lagta hai. 
+                    Hamesha aise hi hasti rehna, aur haan—<strong>party cancel ki toh dekh lena! 😂🍕</strong>
+                </p>
+                <button class="main-btn" id="closeModalBtn">Aww, Close 💗</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
